@@ -1,0 +1,173 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  background-color: #2a2c47;
+  position: fixed;
+  display: block;
+  height: 100vh;
+  width: 300px;
+}
+
+.navigation ul {
+  margin: 4em 4em;
+  list-style: none;
+  display: block;
+}
+
+.navigation ul .nav-link {
+  display: block;
+  font-size: 24px;
+  margin: 1em 0;
+}
+
+.navigation ul .nav-link a {
+  padding: 1em 0;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation ul .nav-link a:hover {
+  color: #ef0d33;
+  margin-left: 1em;
+}
+
+.socialLinks ul {
+  list-style: none;
+  margin: 4em 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialIcon {
+  margin-right: 1.5rem;
+  height: 24px;
+  fill: white;
+}
+
+#hero {
+  width: calc(100% - 300px);
+  height: 100vh;
+  background-image: url("./assets/fernando-hernandez-efzwcMRM6j4-unsplash.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+  left: 300px;
+}
+
+.content {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+  margin: 1.5rem 5rem;
+}
+
+.content p,
+.content h2 {
+  font-size: 2em;
+  margin-left: 5rem;
+}
+
+.content p {
+  margin-top: 10rem;
+}
+
+.content span {
+  font-size: 1em;
+  color: #ef0d33;
+}
+
+.content a {
+  text-decoration: none;
+  color: white;
+  background-color: #ef0d33;
+  font-size: 1em;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.8rem 5rem;
+  display: inline-block;
+}
+
+#about,
+#resume,
+#projects,
+#contact {
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+  display: inline-block;
+}
+
+footer {
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+  display: inline-block;
+  color: #8f8f8f;
+  background-color: #131313;
+}
+
+footer .socialLinks ul {
+  margin: 2rem 0;
+}
+
+footer .wrapper {
+  border-left: 0px solid #dedede;
+  padding-left: 0;
+  margin: 3rem 5rem;
+}
+
+.wrapper {
+  border-left: 4px solid #dedede;
+  margin: 5rem;
+  padding-left: 2rem;
+}
+
+.wrapper h1 {
+  text-transform: uppercase;
+  color: #222;
+  font-size: 2.7em;
+  margin-bottom: 1rem;
+}
+
+#contact {
+  background-color: #2a2c47;
+  color: white;
+}
+
+#contact h1 {
+  color: white;
+}
+
+#contact .wrapper {
+  border-left: 4px solid #ef0d33;
+}
+
+#contact .infos {
+  margin: 5rem 0;
+}
+
+#contact .infos li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem 5rem;
+}
+
+#contact .infos .icon {
+  height: 24px;
+  fill: #ef0d33;
+  margin-right: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
