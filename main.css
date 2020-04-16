@@ -14,7 +14,7 @@
 }
 
 .navigation ul {
-  margin: 4em 4em;
+  margin: 14em 4em;
   list-style: none;
   display: block;
 }
@@ -22,11 +22,12 @@
 .navigation ul .nav-link {
   display: block;
   font-size: 24px;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .navigation ul .nav-link a {
   padding: 1em 0;
+  font-size: 1em;
   text-decoration: none;
   color: white;
 }
@@ -53,7 +54,8 @@
 #hero {
   width: calc(100% - 300px);
   height: 100vh;
-  background-image: url("./assets/fernando-hernandez-efzwcMRM6j4-unsplash.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./assets/fernando-hernandez-efzwcMRM6j4-unsplash.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/fernando-hernandez-efzwcMRM6j4-unsplash.jpg");
   background-size: cover;
   color: white;
   position: relative;
@@ -62,25 +64,18 @@
 
 .content {
   display: inline-block;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  margin: 20% 5rem;
 }
 
 .content h1 {
   text-transform: uppercase;
   font-size: 4em;
-  margin: 1.5rem 5rem;
+  margin: 1.5rem 0;
 }
 
 .content p,
 .content h2 {
   font-size: 2em;
-  margin-left: 5rem;
-}
-
-.content p {
-  margin-top: 10rem;
 }
 
 .content span {
@@ -88,14 +83,26 @@
   color: #ef0d33;
 }
 
-.content a {
+.cta {
   text-decoration: none;
   color: white;
   background-color: #ef0d33;
   font-size: 1em;
-  padding: 1rem 1.5rem;
+  padding: 1em 1.5em;
   border-radius: 8px;
-  margin: 1.8rem 5rem;
+  margin: 1.8em 0;
+  display: inline-block;
+}
+
+.secondary-btn {
+  text-decoration: none;
+  color: #ef0d33;
+  background-color: rgba(255, 255, 255, 0.438);
+  border: 3px #ef0d33 solid;
+  font-size: 1em;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  margin: 1.8em 0;
   display: inline-block;
 }
 
@@ -107,6 +114,11 @@
   position: relative;
   left: 300px;
   display: inline-block;
+}
+
+#about,
+#projects {
+  background: #fafafa;
 }
 
 footer {
@@ -122,19 +134,22 @@ footer .socialLinks ul {
   margin: 2rem 0;
 }
 
-footer .wrapper {
+footer .section-title {
   border-left: 0px solid #dedede;
   padding-left: 0;
   margin: 3rem 5rem;
 }
 
-.wrapper {
-  border-left: 4px solid #dedede;
+.container {
   margin: 5rem;
+}
+
+.section-title {
+  border-left: 4px solid #dedede;
   padding-left: 2rem;
 }
 
-.wrapper h1 {
+.section-title h1 {
   text-transform: uppercase;
   color: #222;
   font-size: 2.7em;
@@ -150,7 +165,7 @@ footer .wrapper {
   color: white;
 }
 
-#contact .wrapper {
+#contact .section-title {
   border-left: 4px solid #ef0d33;
 }
 
@@ -169,5 +184,64 @@ footer .wrapper {
   height: 24px;
   fill: #ef0d33;
   margin-right: 2rem;
+}
+
+.grid-container {
+  margin-top: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-row-gap: 1em;
+}
+
+.grid-item {
+  height: 250px;
+  position: relative;
+  background-color: chocolate;
+  border-radius: 15px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.grid-item .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-item .overlay:hover {
+  opacity: 1;
+}
+
+.grid-item .overlay-content {
+  position: relative;
+  top: 20%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.grid-item .overlay-content h1 {
+  font-size: 2em;
+}
+
+.grid-item .overlay-content svg {
+  margin-right: 0;
+  margin-left: 4px;
 }
 /*# sourceMappingURL=main.css.map */
