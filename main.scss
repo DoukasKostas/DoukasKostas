@@ -11,18 +11,17 @@
   display: block;
   height: 100vh;
   width: 300px;
+  box-shadow: 3px 0px 10px 0px rgba(255, 255, 255, 0.08);
   ul {
     margin: 14em 4em;
     list-style: none;
     display: block;
     .nav-link {
       display: block;
-      font-size: 24px;
-
       margin: 2em 0;
       a {
         padding: 1em 0;
-        font-size: 1em;
+        font-size: 1.35em;
         text-decoration: none;
         color: white;
         &:hover {
@@ -58,7 +57,7 @@
 }
 .content {
   display: inline-block;
-  margin: 20% 5rem;
+  margin: 18rem 5rem;
   h1 {
     text-transform: uppercase;
     font-size: 4em;
@@ -143,7 +142,7 @@ footer {
 #contact {
   background-color: #2a2c47;
   color: white;
-
+  z-index: -1;
   h1 {
     color: white;
   }
@@ -154,7 +153,7 @@ footer {
     margin: 5rem 0;
     li {
       display: flex;
-      margin: 3rem 5rem;
+      margin: 3rem 0;
     }
     .icon {
       height: 24px;
@@ -208,5 +207,13 @@ footer {
       margin-right: 0;
       margin-left: 4px;
     }
+  }
+}
+@media screen and (max-width: 1500px) {
+  * {
+    font-size: 15px;
+  }
+  .navigation ul {
+    margin: 13em 4em;
   }
 }
