@@ -340,7 +340,8 @@ footer .section-title {
 }
 
 .container {
-  margin: 5rem;
+  margin: 2rem;
+  padding: 3rem 0;
 }
 
 .section-title {
@@ -480,12 +481,20 @@ footer .section-title {
   footer {
     left: 0;
     width: 100%;
+    z-index: 0;
   }
   .content {
     margin: 12rem 5rem;
   }
   .small-nav {
     background-color: #2a2c47;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%;
   }
   .menubtn {
     padding: 0.5em 1em;
@@ -540,6 +549,30 @@ footer .section-title {
   .grid-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-height: 560px) {
+  * {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  * {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .navigation ul {
+    margin: 8em 4em;
   }
 }
 /*# sourceMappingURL=main.css.map */
