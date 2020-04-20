@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -98,6 +98,7 @@
       display: block;
       margin: 2em 0;
       a {
+        font-family: Orbitron, Helvetica, sans-serif;
         padding: 1em 0;
         font-size: 1.35em;
         text-decoration: none;
@@ -144,9 +145,12 @@
   }
   p,
   h2 {
+    font-family: Orbitron, Helvetica, sans-serif;
     font-size: 2em;
+    font-weight: normal;
   }
   span {
+    font-family: Orbitron, Helvetica, sans-serif;
     font-size: 1em;
     color: #ef0d33;
   }
@@ -155,7 +159,7 @@
   text-decoration: none;
   color: white;
   background-color: #ef0d33;
-  font-size: 1em;
+  font-size: 1.2em;
   padding: 1em 1.5em;
   border-radius: 8px;
   margin: 1.8em 0;
@@ -205,6 +209,7 @@
 }
 .resume-item {
   h1 {
+    font-family: Orbitron, Helvetica, sans-serif;
     margin-left: 2rem;
     font-size: 1.8em;
   }
@@ -268,6 +273,7 @@ footer {
   border-left: 4px solid #dedede;
   padding-left: 2rem;
   h1 {
+    font-family: Orbitron, Helvetica, sans-serif;
     text-transform: uppercase;
     color: #222;
     font-size: 2.7em;
@@ -351,6 +357,9 @@ footer {
   }
   .navigation ul {
     margin: 12em 4em;
+  }
+  .content {
+    margin: 16rem 5rem;
   }
 }
 @media screen and (max-width: 1100px) {
