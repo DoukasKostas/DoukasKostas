@@ -86,12 +86,13 @@
   z-index: 1;
   background-color: #2a2c47;
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100vh;
-  width: 300px;
   box-shadow: 3px 0px 10px 0px rgba(255, 255, 255, 0.08);
   ul {
-    margin: 14em 4em;
+    margin: 0 4em;
     list-style: none;
     display: block;
     .nav-link {
@@ -105,11 +106,14 @@
         color: white;
         &:hover {
           color: #ef0d33;
-          margin-left: 1em;
+          padding-left: 1em;
         }
       }
     }
   }
+}
+.hidden{
+  display: none;
 }
 .socialLinks {
   ul {
@@ -136,8 +140,12 @@
   left: 300px;
 }
 .content {
-  display: inline-block;
-  margin: 18rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  margin-left: 4rem;
   h1 {
     text-transform: uppercase;
     font-size: 4em;
@@ -162,20 +170,10 @@
   font-size: 1.2em;
   padding: 1em 1.5em;
   border-radius: 8px;
-  margin: 1.8em 0;
+  margin-top: 1.8em;
   display: inline-block;
 }
-.secondary-btn {
-  text-decoration: none;
-  color: #ef0d33;
-  background-color: rgba(255, 255, 255, 0.438);
-  border: 3px #ef0d33 solid;
-  font-size: 1em;
-  padding: 1em 1.5em;
-  border-radius: 8px;
-  margin: 1.8em 0;
-  display: inline-block;
-}
+
 
 #about,
 #resume,
@@ -258,11 +256,6 @@ footer {
     ul {
       margin: 2rem 0;
     }
-  }
-  .section-title {
-    border-left: 0px solid #dedede;
-    padding-left: 0;
-    margin: 3rem 5rem;
   }
 }
 .container {
@@ -356,15 +349,19 @@ footer {
     font-size: 15px;
   }
   .navigation ul {
-    margin: 12em 4em;
+    margin: 0 4em;
   }
-  .content {
-    margin: 16rem 5rem;
-  }
+ 
 }
 @media screen and (max-width: 1100px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+//made important because the menu btn uses inline css
+@media screen and (min-width: 1000px) {
+  .navigation{
+    width: 300px !important;
   }
 }
 
@@ -372,11 +369,12 @@ footer {
   .navigation {
     width: 0px;
     z-index: 5;
+    top:0;
     overflow: hidden;
     transition: 0.5s;
   }
   .navigation ul {
-    margin: 10em 4em;
+    margin: 0 4em;
   }
   #hero,
   #about,
@@ -388,8 +386,8 @@ footer {
     width: 100%;
     z-index: 0;
   }
-  .content {
-    margin: 12rem 5rem;
+  .content{
+    margin-top: 2rem;
   }
   .small-nav {
     background-color: #2a2c47;
@@ -468,6 +466,6 @@ footer {
 }
 @media screen and (max-height: 400px) {
   .navigation ul {
-    margin: 8em 4em;
+    margin: 0 4em;
   }
 }

@@ -139,15 +139,22 @@
   z-index: 1;
   background-color: #2a2c47;
   position: fixed;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 100vh;
-  width: 300px;
   -webkit-box-shadow: 3px 0px 10px 0px rgba(255, 255, 255, 0.08);
           box-shadow: 3px 0px 10px 0px rgba(255, 255, 255, 0.08);
 }
 
 .navigation ul {
-  margin: 14em 4em;
+  margin: 0 4em;
   list-style: none;
   display: block;
 }
@@ -167,7 +174,11 @@
 
 .navigation ul .nav-link a:hover {
   color: #ef0d33;
-  margin-left: 1em;
+  padding-left: 1em;
+}
+
+.hidden {
+  display: none;
 }
 
 .socialLinks ul {
@@ -197,8 +208,21 @@
 }
 
 .content {
-  display: inline-block;
-  margin: 18rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin-left: 4rem;
 }
 
 .content h1 {
@@ -227,19 +251,7 @@
   font-size: 1.2em;
   padding: 1em 1.5em;
   border-radius: 8px;
-  margin: 1.8em 0;
-  display: inline-block;
-}
-
-.secondary-btn {
-  text-decoration: none;
-  color: #ef0d33;
-  background-color: rgba(255, 255, 255, 0.438);
-  border: 3px #ef0d33 solid;
-  font-size: 1em;
-  padding: 1em 1.5em;
-  border-radius: 8px;
-  margin: 1.8em 0;
+  margin-top: 1.8em;
   display: inline-block;
 }
 
@@ -336,12 +348,6 @@ footer {
 
 footer .socialLinks ul {
   margin: 2rem 0;
-}
-
-footer .section-title {
-  border-left: 0px solid #dedede;
-  padding-left: 0;
-  margin: 3rem 5rem;
 }
 
 .container {
@@ -457,10 +463,7 @@ footer .section-title {
     font-size: 15px;
   }
   .navigation ul {
-    margin: 12em 4em;
-  }
-  .content {
-    margin: 16rem 5rem;
+    margin: 0 4em;
   }
 }
 
@@ -471,16 +474,23 @@ footer .section-title {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .navigation {
+    width: 300px !important;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .navigation {
     width: 0px;
     z-index: 5;
+    top: 0;
     overflow: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .navigation ul {
-    margin: 10em 4em;
+    margin: 0 4em;
   }
   #hero,
   #about,
@@ -493,7 +503,7 @@ footer .section-title {
     z-index: 0;
   }
   .content {
-    margin: 12rem 5rem;
+    margin-top: 2rem;
   }
   .small-nav {
     background-color: #2a2c47;
@@ -581,7 +591,7 @@ footer .section-title {
 
 @media screen and (max-height: 400px) {
   .navigation ul {
-    margin: 8em 4em;
+    margin: 0 4em;
   }
 }
 /*# sourceMappingURL=main.css.map */
